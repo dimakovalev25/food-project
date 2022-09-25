@@ -50,10 +50,23 @@
 // sayName.call(obj);
 // sayName.apply(obj);
 
-function count(num) {
-	return this*num;
-}
-const double = count.bind(2);
-console.log(double(3));
+// function count(num) {
+// 	return this*num;
+// }
+// const double = count.bind(2);
+// console.log(double(3));
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', function() {
+	console.log(this);
+});
+
+btn.addEventListener('click', () => {
+	console.log(this);
+});
+
+
+
 
 
