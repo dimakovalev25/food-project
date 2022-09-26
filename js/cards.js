@@ -1,12 +1,13 @@
 'use strict';
 
 class MenuCard {
-	constructor(src, alt, title, descr, price, parentSelector) {
+	constructor(src, alt, title, descr, price, parentSelector, ...clases) {
 		this.src = src;
 		this.alt = alt;
 		this.title = title;
 		this.descr = descr;
 		this.price = price;
+		this.clases = clases;
 		this.parent = document.querySelector(parentSelector);
 		this.transfer = 27;
 		this.changeToUAH();
@@ -55,8 +56,6 @@ new MenuCard(
 	9,
 	'.menu .container',
 ).render();
-
-
 
 
 
