@@ -1,5 +1,5 @@
 
-// spred
+// rest
 
 const obj =  function(a,b, ...rest) {
 	console.log(rest);
@@ -32,3 +32,17 @@ console.log(rest2);
   '!', '!'
 ] */
 
+
+
+
+//spred
+
+const arr = [1,2];
+const arrSecond = [...arr, 3];
+console.log(arrSecond);    
+// [ 3, 1, 2 ]
+
+
+const arrs = [90].concat(arr);
+console.log(arrs);
+// [ 90, 1, 2 ]
